@@ -8,19 +8,21 @@ public static class Programm
         var arrayException = new List<Exception>() { new ArgumentException(), new FormatException(), new ArgumentOutOfRangeException(), new DivideByZeroException(), new() };
         foreach (var item in arrayException)
         {
-            while (true)
+            bool bad = true;
+            while (bad)
             {
                 try
                 {
                     Exceptions.NumberExcept();
-                    break;
+                    Console.WriteLine("Вы угадали - число 7");
+                    //bad = false;
                 }
-
                 catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
+            break;
         }
     }
 }

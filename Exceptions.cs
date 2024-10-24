@@ -13,7 +13,7 @@ namespace Module9.Task1
 
 /// <summary>
 /// Метод с условиями для исключений
-/// </summary>
+/// <summary>
 /// <exception cref="FormatException"></exception>              - некорректный формат введенной переменной (нужно int)
 /// <exception cref="ArgumentException"></exception>            - введенная переменная 0 символов 
 /// <exception cref="ArgumentOutOfRangeException"></exception>  - введенное число вне диапазона (от 0 до 10)
